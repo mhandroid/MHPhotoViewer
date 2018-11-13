@@ -4,6 +4,7 @@ import android.app.Application;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
+import com.mh.android.photoviewer.BuildConfig;
 import com.mh.android.photoviewer.api.ApiInterface;
 import com.mh.android.photoviewer.utils.ConnectivityInterceptor;
 
@@ -25,7 +26,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 @Module
 public class NetModule {
 
-    private static final String BASE_URL = "http://jsonplaceholder.typicode.com";
+    private static final String BASE_URL = BuildConfig.BASE_URL;
 
     @Singleton
     @Provides
